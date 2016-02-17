@@ -11,8 +11,5 @@
       }
     }
     $passwordI++;
-    if ($j < 4) {
-      join ($password, "-");
-    }
   }
 ?>
