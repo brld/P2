@@ -8,6 +8,7 @@
 A program that allows for generating passwords with multiple user inputs. Includes number of words, seperators, symbols, and numbers.
 
 ##Demo
+[https://youtu.be/EnJ5fHxlN5k] (https://youtu.be/EnJ5fHxlN5k)
 
 ##Details for teaching team
 Inputing invalid word length generates a default 4 word password.
