@@ -12,10 +12,14 @@
   </head>
   <body>
 
-    <?php foreach ($password as $word) { ?>
-
-        <?php echo $word ?>
-        <?php echo "-" ?>
+    <?php foreach ($password as $place => $word) { ?>
+        <?php $echoed = 0; ?>
+        <?php echo $word; ?>
+        <?php $echoed++; ?>
+        <?php if ($echoed < 4) {
+          echo "-";
+        }
+        ?>
     <?php } ?>
 
 
