@@ -1,5 +1,6 @@
 * {
   text-align: center;
+  font-family: Roboto Condensed, sans-serif;
 }
 
 body {
@@ -10,7 +11,15 @@ body {
   padding-bottom: 1em;
 }
 
-#password {
-  size: 20px;
-  color: #990000;
+.submit {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
