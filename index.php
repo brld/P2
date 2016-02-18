@@ -12,17 +12,6 @@
 
   </head>
   <body>
-
-    <?php foreach ($password as $place => $word) { ?>
-        <?php $echoed = 0; ?>
-        <?php echo $word; ?>
-        <?php $echoed++; ?>
-        <?php if ($echoed < 4) {
-          echo "-";
-        }
-        ?>
-    <?php } ?>
-
-
+    <h1>Xkcd Password Generator</h1>
   </body>
 </html>
