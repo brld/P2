@@ -5,25 +5,15 @@
   $inputWords = $_GET["inputWords"];
   $numberGen = $_GET["numberGen"];
   $symbolGen = $_GET["symbolGen"];
-
+  if (! ctype_digit($inputWords)) {
+    $inputWords = 4;
+    echo nl2br ("Not an integer, generating default 4 word password.");
+  }
   if ($inputWords == 1) {
     $inputWords = 2;
-    echo nl2br ("Invalid input, generating two word password. \n \n");
   }
   $numWords = $inputWords;
   $rand_words = array_rand($words,$numWords);
   $rand_symbols = array_rand($symbols, 1);
   $rand_numbers = array_rand($numbers, 1);
-  for ($i=0; $i < $numWords; $i++) {
-    echo $words[$rand_words[$i]] . "\n";
-    if ($i < $numWords - 1) {
-      echo "- ";
-    }
-  }
-  if ($symbolGen == TRUE) {
-    echo $symbols[$rand_symbols];
-  }
-  if ($numberGen == TRUE) {
-    echo $numbers[$rand_numbers];
-  }
 ?>

@@ -1,0 +1,16 @@
+* {
+  text-align: center;
+}
+
+body {
+  background-color: #fff9e6;
+}
+
+.inputWords {
+  padding-bottom: 1em;
+}
+
+#password {
+  size: 20px;
+  color: #990000;
+}
