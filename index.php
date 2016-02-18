@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Xkcd Password Generator</h1>
-    <form action="logic.php" method="GET">
+    <form action="index.php" method="GET">
       Number of words (Min 2, Max 9): <br>
       <input type="text" name="inputWords" maxlength="1" id="inputWords"> <br>
       Include a number? <br>
