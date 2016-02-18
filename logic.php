@@ -14,7 +14,6 @@
       $inputWords = 4;
       echo nl2br ("Not an integer, generating default 4 word password.");
     }
-
   }
   if (strlen($inputWords) == 0) {
     $inputWords = 4;
