@@ -12,7 +12,9 @@
     <h1>xkcd Password Generator</h1>
     <form action="index.php" method="GET">
       <p>Number of words (Min 2, Max 9):</p>
-      <input type="text"  name="inputWords" maxlength="1" id="inputWords"> <br><br>
+      <input type="text" name="inputWords" maxlength="1" id="inputWords"> <br><br>
+      <p>What kind of seperator?</p>
+      <input type="text" name="seperator" maxlength="1" id="seperator"><br><br>
       <p>Include a number?</p>
       <input type="checkbox" name="numberGen" value="Number" id="numberGen"> <br><br>
       <p>Include a symbol?</p>
@@ -23,7 +25,7 @@
       echo $words[$rand_words[$i]] . "\n";
 
       if ($i < $numWords - 1) {
-      echo "- ";
+      echo $seperator." ";
       }
       if ($symbolGen == TRUE) {
         echo $symbols[$rand_symbols];
