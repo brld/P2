@@ -18,10 +18,5 @@
       <input type="checkbox" name="symbolGen" value="Symbol" id="symbolGen"> <br>
       <input type="submit" value="Generate new">
     </form>
-    <?php foreach ($words as $rand_words => $numWords) {
-      echo $words[$rand_words[$i]] . "\n";
-      if ($i < $numWords - 1) {
-        echo "- ";
-    } ?>
   </body>
 </html>
