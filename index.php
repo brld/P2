@@ -2,16 +2,21 @@
 <html>
   <head>
 
+    <?php require "logic.php" ?>
     <title>xkcd Password Generator</title>
-    <?php require "logic.php"; ?>
     <link rel="stylesheet" href="" type="text/css">
-    <form action="index.php" method="GET">
-      <input type="text" name="Number of words"> <br>
-      <input type="submit" value="Generate new">
-    </form>
 
   </head>
   <body>
     <h1>Xkcd Password Generator</h1>
+    <?php $inputWords = 4; ?>
+    <form action="index.php" method="GET">
+      Number of words (Max 9):
+      <input type="text" name="inputWords" maxlength="1" id="inputWords"> <br>
+      <input type="submit" value="Generate new">
+      <?php
+      $inputWords= $_GET["inputWords"];
+      ?>
+    </form>
   </body>
 </html>
