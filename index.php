@@ -10,7 +10,7 @@
   <body>
     <h1>Xkcd Password Generator</h1>
     <form action="logic.php" method="GET">
-      Number of words (Max 9):
+      Number of words (Min 2, Max 9):
       <input type="text" name="inputWords" maxlength="1" id="inputWords"> <br>
       <input type="submit" value="Generate new">
     </form>
