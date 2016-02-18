@@ -5,6 +5,10 @@
   $inputWords = $_GET["inputWords"];
   $numberGen = $_GET["numberGen"];
   $symbolGen = $_GET["symbolGen"];
+  $seperator;
+  if (! strlen($seperator) == 0) {
+    $seperator = "- ";
+  }
   $seperator = $_GET["seperator"];
   if (! ctype_digit($inputWords)) {
     if (! strlen($inputWords) == 0) {
@@ -13,9 +17,7 @@
     }
 
   }
-  if (! strlen($inputWords) == 0) {
-    $seperator = "- ";
-  }
+
   if ($inputWords == 1) {
     $inputWords = 2;
     echo nl2br ("Not a valid length, generating 2 word password.");
