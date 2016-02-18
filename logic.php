@@ -16,6 +16,9 @@
     }
 
   }
+  if (strlen($inputWords) == 0) {
+    $inputWords = 4;
+  }
 
   if ($inputWords == 1) {
     $inputWords = 2;
