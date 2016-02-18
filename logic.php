@@ -5,11 +5,10 @@
   $inputWords = $_GET["inputWords"];
   $numberGen = $_GET["numberGen"];
   $symbolGen = $_GET["symbolGen"];
-  $seperator;
-  if (! strlen($seperator) == 0) {
+  $seperator = $_GET["seperator"];
+  if (strlen($seperator) == 0) {
     $seperator = "- ";
   }
-  $seperator = $_GET["seperator"];
   if (! ctype_digit($inputWords)) {
     if (! strlen($inputWords) == 0) {
       $inputWords = 4;
