@@ -19,17 +19,17 @@
       <input type="submit" value="Generate new"> <br><br>
     </form>
     <?php for ($i=0; $i < $numWords; $i++) {
-    echo $words[$rand_words[$i]] . "\n";
+      echo $words[$rand_words[$i]] . "\n";
 
-    if ($i < $numWords - 1) {
-    echo "- ";
-    }
-    if ($symbolGen == TRUE) {
-      echo $symbols[$rand_symbols];
-    }
-    if ($numberGen == TRUE) {
-      echo $numbers[$rand_numbers];
-    }
+      if ($i < $numWords - 1) {
+      echo "- ";
+      }
+      if ($symbolGen == TRUE) {
+        echo $symbols[$rand_symbols];
+      }
+      if ($numberGen == TRUE) {
+        echo $numbers[$rand_numbers];
+      }
     }?>
   </body>
 </html>

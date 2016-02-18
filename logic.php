@@ -6,11 +6,15 @@
   $numberGen = $_GET["numberGen"];
   $symbolGen = $_GET["symbolGen"];
   if (! ctype_digit($inputWords)) {
-    $inputWords = 4;
-    echo nl2br ("Not an integer, generating default 4 word password.");
+    if (! strlen($inputWords) == 0) {
+      $inputWords = 4;
+      echo nl2br ("Not an integer, generating default 4 word password.");
+    }
+
   }
   if ($inputWords == 1) {
     $inputWords = 2;
+    echo nl2br ("Not a valid length, generating 2 word password.");
   }
   $numWords = $inputWords;
   $rand_words = array_rand($words,$numWords);
