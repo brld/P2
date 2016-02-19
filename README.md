@@ -18,3 +18,4 @@ ctype_digit: [http://forums.phpfreaks.com](http://forums.phpfreaks.com)
 
 strlen: [http://php.net/manual/en/] (http://php.net/manual/en/index.php)
 
+button styling: [http://www.w3schools.com/] (http://www.w3schools.com/)
