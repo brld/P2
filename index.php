@@ -13,7 +13,7 @@
     <form action="index.php" method="GET">
       <p>Number of words (Min 2, Max 9):</p>
       <input type="text" name="inputWords" maxlength="1" id="inputWords"> <br><br>
-      <p>What kind of seperator?</p>
+      <p>What kind of separator?</p>
       <input type="text" name="seperator" id="seperator"><br><br>
       <p>Include a number?</p>
       <input type="checkbox" name="numberGen" value="Number" id="numberGen"> <br><br>
