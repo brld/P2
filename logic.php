@@ -5,9 +5,9 @@
   $inputWords = $_GET["inputWords"];
   $numberGen = $_GET["numberGen"];
   $symbolGen = $_GET["symbolGen"];
-  $seperator = $_GET["seperator"];
-  if (strlen($seperator) == 0) {
-    $seperator = "- ";
+  $separator = $_GET["separator"];
+  if (strlen($separator) == 0) {
+    $separator = "- ";
   }
   if (! ctype_digit($inputWords)) {
     if (! strlen($inputWords) == 0) {
